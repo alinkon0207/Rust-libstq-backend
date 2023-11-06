@@ -1,0 +1,18 @@
+[package]
+name = "stq_roles"
+version = "0.1.0"
+
+[dependencies]
+failure = "0.1"
+futures = "0.1"
+hyper = "0.11"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+stq_acl = { path = "../acl" }
+stq_db = { path = "../db" }
+stq_http = { path = "../http" }
+stq_router = { path = "../router" }
+stq_types = { path = "../types" }
+tokio-postgres = { git = "https://github.com/StoriqaTeam/rust-postgres", features = ["with-serde_json-1", "with-uuid-0.6"] }
+uuid = { version = "*", features = ["serde", "v4"] }

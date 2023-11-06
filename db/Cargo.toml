@@ -1,0 +1,15 @@
+[package]
+name = "stq_db"
+version = "0.1.0"
+
+[dependencies]
+bb8 = { git = "https://github.com/StoriqaTeam/bb8" }
+bb8-postgres = { git = "https://github.com/StoriqaTeam/bb8" }
+diesel = { version = "*", features = ["postgres", "extras"] }
+either = "1"
+failure = "0.1"
+futures = "0.1"
+futures-state-stream = "0.2"
+postgres = { git = "https://github.com/StoriqaTeam/rust-postgres" }
+stq_acl = { path = "../acl" }
+tokio-postgres = { git = "https://github.com/StoriqaTeam/rust-postgres" }

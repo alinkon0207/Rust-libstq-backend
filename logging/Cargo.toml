@@ -1,0 +1,11 @@
+[package]
+name = "stq_logging"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.4"
+env_logger = "0.5"
+gelf = { git = "https://github.com/StoriqaTeam/gelf-rust", tag = "0.2.3-2018-12-07" }
+log = { version = "0.4", features = ["std", "serde"] }
+serde = "1"
+serde_derive = "1"

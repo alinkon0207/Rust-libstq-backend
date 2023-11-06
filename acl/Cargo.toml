@@ -1,0 +1,7 @@
+[package]
+name = "stq_acl"
+version = "0.1.0"
+
+[dependencies]
+failure = "0.1"
+futures = "0.1"

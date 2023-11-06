@@ -1,0 +1,18 @@
+version: "3"
+services:
+  stq_cache_test:
+    image: rust:1.31-stretch
+    command: sh -c "cargo build && cargo test"
+    environment:
+      - CARGO_TARGET_DIR=/target
+      - REDIS_URL=redis://stq_cache_test_redis/
+    volumes:
+      - .:/code
+    working_dir: /code
+    depends_on:
+      - stq_cache_test_redis
+    links:
+      - stq_cache_test_redis
+
+  stq_cache_test_redis:
+    image: redis:4.0-alpine

@@ -1,0 +1,12 @@
+[package]
+name = "stq_cache"
+version = "0.1.0"
+
+[dependencies]
+failure = "0.1"
+r2d2_redis = "0.8"
+serde = "1.0"
+serde_json = "1.0"
+
+[dev-dependencies]
+serde_derive = "1.0"

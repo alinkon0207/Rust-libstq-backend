@@ -1,0 +1,12 @@
+[package]
+name = "stq_diesel_macro_derive"
+version = "0.1.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "0.14.4"
+quote = "0.6.3"
+proc-macro2="0.4.6"
+heck="*"

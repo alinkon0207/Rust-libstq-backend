@@ -1,0 +1,24 @@
+[package]
+name = "stq_api"
+version = "0.1.0"
+
+[dependencies]
+chrono = { version = "*", features = ["serde"] }
+failure = "0.1"
+futures = "0.1"
+geo = { version = "0.10", features = ["use-serde"] }
+hyper = "0.12"
+lazy_static = "*"
+regex = "*"
+reqwest = "0.9.4"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+stq_roles = { path = "../roles" }
+stq_router = { path = "../router" }
+stq_static_resources = { path = "../static_resources" }
+stq_types = { path = "../types" }
+tokio-core = "*"
+validator_derive = "*"
+validator = "*"
+uuid = { version = "0.6", features = ["serde", "v4"] }
